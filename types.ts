@@ -21,9 +21,15 @@ export interface RelationshipScoreUpdate {
   change: number;
 }
 
+export interface BranchCondition {
+  requiredKeyEvent: string;
+  nextSceneId: string;
+}
+
 export interface PlayerChoice {
   text: string;
-  nextSceneId: string;
+  nextSceneId: string; // Default/fallback scene
+  branches?: BranchCondition[]; // Conditional branches
   stateUpdates?: {
     relationshipScores?: RelationshipScoreUpdate[];
     keyEvents?: string[];

@@ -48,7 +48,7 @@ export const chapter3Data: Record<string, Scene> = {
     },
     'scene_ch3_04_poelay_encounter': {
       sceneId: 'scene_ch3_04_poelay_encounter',
-      narratorText: ["'ဟေ့၊ ကြည့်ကြပ်သွားပါဦး!' ဟု သင်ပြောబోသော်လည်း မော့ကြည့်လိုက်သောအခါ သင့်ဦးနှောက်သည် ခေတ္တရပ်တန့်သွားသည်။ သူမဖြစ်သည်။ ပိုးလေး။ သင့်ရဲ့ ပထမဆုံးသော၊ မျှော်လင့်ချက်မဲ့ တက္ကသိုလ်ကျောင်းသားဘဝက အချစ်။ သူမ... အရင်အတိုင်းပင်၊ သို့သော် အနည်းငယ်ပြောင်းလဲသွားသည်။ ပိုပင်ပန်းနေသလိုပင်။ သို့သော် ထိုအပြုံးကတော့ အတူတူပင်။"],
+      narratorText: ["'ဟေ့၊ ကြည့်ကြပ်သွားပါဦး!' ဟု သင်ပြောမည်အပြု မော့ကြည့်လိုက်သောအခါ သင့်ဦးနှောက်သည် ခေတ္တရပ်တန့်သွားသည်။ သူမဖြစ်သည်။ ပိုးလေး။ သင့်ရဲ့ ပထမဆုံးသော၊ မျှော်လင့်ချက်မဲ့ တက္ကသိုလ်ကျောင်းသားဘဝက အချစ်။ သူမ... အရင်အတိုင်းပင်၊ သို့သော် အနည်းငယ်ပြောင်းလဲသွားသည်။ ပိုပင်ပန်းနေသလိုပင်။ သို့သော် ထိုအပြုံးကတော့ အတူတူပင်။"],
       dialogue: [
         {character: "ပိုးလေး", line: "အိုး၊ တောင်းပန်ပါတယ်... သန့်လင်းစိုး? ဟုတ်ရဲ့လား?"}
       ],
@@ -68,7 +68,7 @@ export const chapter3Data: Record<string, Scene> = {
       ],
        playerChoices: [
         {text: "\"ငါတို့... တစ်ချိန်ချိန်မှာ သေချာပြန်တွေ့ပြီး စကားပြောကြရအောင်။\"", nextSceneId: 'scene_ch3_06_poelay_exchange_numbers'},
-        {text: "\"တွေ့ရတာဝမ်းသာပါတယ်။ ဂရုစိုက်ပါဦး။\"", nextSceneId: 'scene_end_of_content'}
+        {text: "\"တွေ့ရတာဝမ်းသာပါတယ်။ ဂရုစိုက်ပါဦး။\"", nextSceneId: 'scene_ch5_01_wati_call'}
       ]
     },
     'scene_ch3_06_poelay_exchange_numbers': {
@@ -77,13 +77,6 @@ export const chapter3Data: Record<string, Scene> = {
         {character: "ပိုးလေး", line: "ကောင်းတာပေါ့။ ကျွန်မလည်း ဝမ်းသာပါတယ်။ ဒီမှာ... ဒါကျွန်မဖုန်းနံပါတ်။"}
       ],
       narratorText: ["သူမကသင့်ကိုဖုန်းနံပါတ်ပေးသည်။ သင်တို့နှစ်ယောက်လမ်းခွဲလိုက်ကြပြီး သင့်စိတ်ထဲတွင် အတွေးပေါင်းများစွာဖြင့် ကျန်နေခဲ့သည်။"],
-      playerChoices: [{text: "ဆက်ရန်...", nextSceneId: 'scene_end_of_content', stateUpdates: {keyEvents: ['got_poelay_number']}}]
-    },
-    'scene_end_of_content': {
-        sceneId: 'scene_end_of_content',
-        narratorText: ["ဇာတ်လမ်းသည် ဤနေရာတွင် ယာယီအဆုံးသတ်သွားသည်။ ဆက်လက်ဖတ်ရှုရန်စောင့်မျှော်ပေးပါ။"],
-        playerChoices: [
-          { text: "ပြန်စရန်", nextSceneId: 'scene_01_bar_ambush' }
-        ]
-      }
+      playerChoices: [{text: "ဆက်ရန်...", nextSceneId: 'scene_ch4_01_poelay_call', stateUpdates: {keyEvents: ['got_poelay_number']}}]
+    }
 };

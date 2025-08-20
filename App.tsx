@@ -41,58 +41,76 @@ const App: React.FC = () => {
     window.scrollTo(0, 0); // Scroll to top on scene change
   };
 
+  const parseChoice = (text: string) => {
+    const match = text.match(/^(\[.*?\])\s*(.*)/);
+    if (match) {
+        return { prefix: match[1], main: match[2] };
+    }
+    return { prefix: null, main: text };
+  };
+
   const renderGame = () => {
     if (!currentScene) {
-        return null; // Don't render anything until the first scene is loaded
+        return null;
     }
     
     return (
-      <div className="p-4 sm:p-8 max-w-3xl mx-auto min-h-screen flex flex-col justify-center">
-        <div className="flex-grow flex flex-col justify-center">
-          <div className="space-y-4 mb-8 text-lg leading-relaxed">
-              {currentScene.narratorText.map((text, index) => (
-                  <p 
-                      key={`${currentScene.sceneId}-narrator-${index}`}
-                      className="text-gray-300" 
-                  >
-                    {text}
-                  </p>
-              ))}
-
-              {currentScene.internalMonologue && (
-                  <p
-                    key={`${currentScene.sceneId}-monologue`}
-                    className="text-cyan-300 italic pl-4 border-l-2 border-cyan-500 my-4" 
-                  >
-                    {currentScene.internalMonologue}
-                  </p>
-              )}
-              
-              {currentScene.dialogue && (
-                <div className="space-y-2 mt-4">
-                  {currentScene.dialogue.map((line: CharacterLine, index: number) => (
-                    <p 
-                      key={`${currentScene.sceneId}-dialogue-${index}`}
-                      className="text-gray-100"
-                    >
-                      <span className="font-bold text-cyan-400">{line.character}:</span> {line.line}
-                    </p>
-                  ))}
-                </div>
-              )}
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 gap-4">
-        {currentScene.playerChoices.map((choice, index) => (
-            <button
-            key={index}
-            onClick={() => handleChoice(choice)}
-            className="w-full text-left p-4 bg-slate-900 hover:bg-cyan-900/50 border border-slate-700 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-cyan-500"
-            >
-            <p className="text-gray-200 text-lg">{choice.text}</p>
+      <div className="min-h-screen flex items-center justify-center p-4">
+        <div className="relative w-full max-w-4xl bg-slate-900/70 backdrop-blur-lg border border-slate-700 rounded-2xl shadow-2xl p-6 sm:p-10 text-lg sm:text-xl leading-relaxed">
+            <button className="absolute top-4 right-4 bg-slate-800/80 hover:bg-slate-700/80 text-gray-300 font-semibold py-2 px-5 rounded-lg border border-slate-600 transition-colors duration-300">
+                Save Game
             </button>
-        ))}
+            <div className="space-y-6 mb-8">
+                {currentScene.narratorText.map((text, index) => (
+                    <p 
+                        key={`${currentScene.sceneId}-narrator-${index}`}
+                        className="text-gray-300" 
+                    >
+                      {text}
+                    </p>
+                ))}
+
+                {currentScene.internalMonologue && (
+                    <blockquote
+                      key={`${currentScene.sceneId}-monologue`}
+                      className="text-amber-300 italic pl-4 border-l-4 border-amber-400 my-6" 
+                    >
+                      {currentScene.internalMonologue}
+                    </blockquote>
+                )}
+                
+                {currentScene.dialogue && (
+                  <div className="space-y-4 mt-6">
+                    {currentScene.dialogue.map((line: CharacterLine, index: number) => (
+                      <p 
+                        key={`${currentScene.sceneId}-dialogue-${index}`}
+                        className="text-gray-100"
+                      >
+                        <span className="font-bold text-cyan-400">{line.character}:</span> {line.line}
+                      </p>
+                    ))}
+                  </div>
+                )}
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {currentScene.playerChoices.map((choice, index) => {
+                const { prefix, main } = parseChoice(choice.text);
+                return (
+                    <button
+                        key={index}
+                        onClick={() => handleChoice(choice)}
+                        className="w-full text-left p-4 bg-slate-800/50 hover:bg-slate-700/70 border border-slate-600 rounded-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                        aria-label={choice.text}
+                    >
+                        <p className="text-gray-200">
+                            {prefix && <span className="text-amber-300 mr-2">{prefix}</span>}
+                            {main}
+                        </p>
+                    </button>
+                )
+            })}
+            </div>
         </div>
       </div>
     );

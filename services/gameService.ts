@@ -10,7 +10,17 @@ export const getNextScene = (
   gameState: GameState,
   playerChoice: PlayerChoice
 ): OfflineResponse => {
-  const nextSceneId = playerChoice.nextSceneId;
+  let nextSceneId = playerChoice.nextSceneId;
+
+  // Check for conditional branches
+  if (playerChoice.branches) {
+    for (const branch of playerChoice.branches) {
+      if (gameState.keyEvents.includes(branch.requiredKeyEvent)) {
+        nextSceneId = branch.nextSceneId;
+        break; // Use the first matching branch
+      }
+    }
+  }
   
   const nextScene = gameData[nextSceneId];
 
