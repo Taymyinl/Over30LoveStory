@@ -60,7 +60,7 @@ const App: React.FC = () => {
             <button className="absolute top-4 right-4 bg-slate-800/80 hover:bg-slate-700/80 text-gray-300 font-semibold py-2 px-5 rounded-lg border border-slate-600 transition-colors duration-300">
                 Save Game
             </button>
-            <div className="space-y-6 mb-8" style="padding-top:40px;">
+            <div className="space-y-6 mb-8 pt-20">
                 {currentScene.narratorText.map((text, index) => (
                     <p 
                         key={`${currentScene.sceneId}-narrator-${index}`}
