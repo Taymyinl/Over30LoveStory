@@ -75,7 +75,7 @@ export const chapter15Data: Record<string, Scene> = {
             "သူကသင်တို့တစ်ယောက်ချင်းစီကိုကြည့်ပြီး ရိုးရှင်းတဲ့စကားတစ်ခွန်းပြောလိုက်တယ်။"
         ],
         dialogue: [
-            { character: "ဝေယံ", line: "သူပြန်လာပြီ။" }
+            { character: "ဝေယံ", line: "ငါပြန်လာပြီ။" }
         ],
         playerChoices: [
             { text: "...", nextSceneId: 'scene_wai_yan_epilogue_wakeup' }
