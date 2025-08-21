@@ -68,5 +68,19 @@ export const chapter14Data: Record<string, Scene> = {
             { text: "\"ငါမှန်မှန်ကန်ကန်လုပ်ခဲ့တာလား?\"", nextSceneId: 'scene_ch15_01_ending_platonic' },
             { text: "\"ငါတစ်ယောက်တည်းပဲအဆုံးသတ်ရတော့မယ်ထင်တယ်။\"", nextSceneId: 'scene_ch15_01_ending_single' }
         ]
+    },
+
+    // CHAPTER 14, PATH 6: HTET NAING'S FINAL CHOICE
+    'scene_ch14_01_htetnaing_final_choice': {
+        sceneId: 'scene_ch14_01_htetnaing_final_choice',
+        narratorText: ["သင်ထက်နိုင်ရဲ့တိုက်ခန်းမှာရှိနေသည်။ သူကသင့်ကိုလက်ဖက်ရည်တစ်ခွက်ဖျော်ပေးနေသည်။ သူ့နေရာကသန့်ရှင်းပြီး ngăn nắpကျသည်။ စာအုပ်တွေအများကြီးရှိသည်။"],
+        dialogue: [
+            { character: "ထက်နိုင်", line: "မင်းဒီရက်ပိုင်းတော်တော်လေးဖြတ်သန်းခဲ့ရတာပဲ။ အခုတော့အနားယူလိုက်တော့။" }
+        ],
+        internalMonologue: "သူနဲ့အတူရှိနေရင် အရာအားလုံးကပိုပြီးလွယ်ကူသွားသလိုပဲ။ ဒရာမာတွေမရှိဘူး။ ဟန်ဆောင်မှုတွေမရှိဘူး။ ဒီတိုင်းပဲ... တည်ငြိမ်နေတယ်။ ဒါကအချစ်လား? ဒါမှမဟုတ်သက်သောင့်သက်သာရှိမှုသက်သက်ပဲလား?",
+        playerChoices: [
+            { text: "သူ့လက်ကိုကိုင်လိုက်သည်။ \"ငါ့အတွက်မင်းရှိနေပေးလို့ကျေးဇူးတင်ပါတယ်။\"", nextSceneId: 'scene_ch15_01_ending_htetnaing', stateUpdates: {keyEvents: ['final_decision_htetnaing']} },
+            { text: "\"မင်းကသူငယ်ချင်းကောင်းတစ်ယောက်ပဲ။\"", nextSceneId: 'scene_ch15_01_ending_platonic' }
+        ]
     }
 };

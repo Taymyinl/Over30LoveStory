@@ -8,6 +8,8 @@ export interface RelationshipScores {
   linKo: number;
   htetNaing: number;
   htooAung: number;
+  tunMinAung: number;
+  mayLay: number;
 }
 
 export interface GameState {

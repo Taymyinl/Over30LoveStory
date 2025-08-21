@@ -10,6 +10,29 @@ export const chapter11Data: Record<string, Scene> = {
             { text: "ဝတီကိုအရင်ဖုန်းခေါ်မယ်။ သူမကအယဉ်ကျေးဆုံးဖြစ်နိုင်တယ်။", nextSceneId: 'scene_ch11_02_apology_wati' },
             { text: "သုသုမေကိုစာပို့မယ်။ သူမကဒေါသအကြာကြီးမထွက်လောက်ဘူး။", nextSceneId: 'scene_ch11_02_apology_thuthumay' },
             { text: "နှင်းပွင့်ကိုအီးမေးလ်ပို့မယ်။ သူမကယုတ္တိရှိတဲ့ရှင်းပြချက်ကိုတန်ဖိုးထားလောက်တယ်။", nextSceneId: 'scene_ch11_02_apology_hninpwint' },
+            { text: "ပိုးလေးကိုဖုန်းခေါ်မယ်။ ဒါကအရေးအကြီးဆုံးပဲ။", nextSceneId: 'scene_ch11_02_apology_poelay' },
+            { text: "ငါဘာလုပ်ရမလဲမသေချာဘူး။ ထက်နိုင်နဲ့အရင်ဆုံးစကားပြောကြည့်မယ်။", nextSceneId: 'scene_ch11_01b_talk_to_htetnaing' },
+        ]
+    },
+    'scene_ch11_01b_talk_to_htetnaing': {
+        sceneId: 'scene_ch11_01b_talk_to_htetnaing',
+        narratorText: ["သင်ထက်နိုင်ကိုဖုန်းဆက်လိုက်သည်။"],
+        dialogue: [
+            { character: "သန့်လင်းစိုး", line: "ငါ... အားလုံးကိုတောင်းပန်ချင်တယ်။ ဒါပေမဲ့ဘယ်ကစရမလဲမသိဘူး။ ငါမှန်မှန်ကန်ကန်လုပ်ချင်တယ်။" },
+            { character: "ထက်နိုင်", line: "ဒါကကောင်းတဲ့ပထမခြေလှမ်းပဲ။ မင်းဘယ်သူ့ကိုအနာကျင်ဆုံးဖြစ်စေခဲ့လဲလို့ထင်လဲ? ဒါမှမဟုတ်... မင်းဘယ်သူ့ကိုအမှန်အတိုင်းပြန်ဆက်သွယ်ချင်ဆုံးလဲ?" }
+        ],
+        internalMonologue: "ဘယ်သူ့ကိုငါအမှန်အတိုင်းပြန်ဆက်သွယ်ချင်ဆုံးလဲ? ဒါက... ကောင်းတဲ့မေးခွန်းပဲ။",
+        playerChoices: [
+            { text: "ကျေးဇူးပဲ ထက်နိုင်။ မင်းကအမြဲတမ်းမှန်ကန်တဲ့မေးခွန်းကိုမေးတယ်။", nextSceneId: 'scene_ch11_01_apology_tour_choice_focused', stateUpdates: {relationshipScores: [{character: 'htetNaing', change: 1}]} }
+        ]
+    },
+    'scene_ch11_01_apology_tour_choice_focused': {
+        sceneId: 'scene_ch11_01_apology_tour_choice_focused',
+        narratorText: ["ထက်နိုင်နဲ့စကားပြောပြီးနောက် သင့်စိတ်ထဲမှာပိုပြီးရှင်းလင်းသွားသည်။"],
+        playerChoices: [
+            { text: "ဝတီကိုအရင်ဖုန်းခေါ်မယ်။ သူမကအယဉ်ကျေးဆုံးဖြစ်နိုင်တယ်။", nextSceneId: 'scene_ch11_02_apology_wati' },
+            { text: "သုသုမေကိုစာပို့မယ်။ သူမကဒေါသအကြာကြီးမထွက်လောက်ဘူး။", nextSceneId: 'scene_ch11_02_apology_thuthumay' },
+            { text: "နှင်းပွင့်ကိုအီးမေးလ်ပို့မယ်။ သူမကယုတ္တိရှိတဲ့ရှင်းပြချက်ကိုတန်ဖိုးထားလောက်တယ်။", nextSceneId: 'scene_ch11_02_apology_hninpwint' },
             { text: "ပိုးလေးကိုဖုန်းခေါ်မယ်။ ဒါကအရေးအကြီးဆုံးပဲ။", nextSceneId: 'scene_ch11_02_apology_poelay' }
         ]
     },

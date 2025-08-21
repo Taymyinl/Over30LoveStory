@@ -34,8 +34,8 @@ export const chapter10Data: Record<string, Scene> = {
             { character: "ထက်နိုင်", line: "မင်းဘာလို့သူတို့ကိုဒီလောက်ထိလုပ်ခွင့်ပေးထားတာလဲ သန့်လင်းစိုး? မင်းကတကယ်တော့မိန်းကလေးတစ်ယောက်မှမကြိုက်ဘူး။ မင်းကဒီတိုင်းပဲ... ကြောက်နေတာ။" }
         ],
         playerChoices: [
-            { text: "\"ငါမကြောက်ပါဘူး။ ငါက... သတိထားနေတာ။\"", nextSceneId: 'scene_ch10_04_the_flashback_intro' },
-            { text: "\"ဟုတ်တယ်။ ငါကြောက်တယ်။\"", nextSceneId: 'scene_ch10_04_the_flashback_intro', stateUpdates: {relationshipScores: [{character: 'htetNaing', change: 1}]} }
+            { text: "\"ငါကြောက်တယ်။ နောက်တစ်ခါအဲလိုအဖြစ်မခံနိုင်တော့ဘူး။\"", nextSceneId: 'scene_ch10_04_the_flashback_intro', stateUpdates: {relationshipScores: [{character: 'htetNaing', change: 1}]} },
+            { text: "\"ငါကြောက်တာမဟုတ်ဘူး... ငါแค่... ပင်ပန်းနေပြီ။ ဒါပေမဲ့ မင်းနဲ့စကားပြောရတာ... ကူညီပေးတယ်။\"", nextSceneId: 'scene_ch10_04_the_flashback_intro', stateUpdates: {relationshipScores: [{character: 'htetNaing', change: 2}]} }
         ]
     },
     'scene_ch10_04_the_flashback_intro': {
@@ -83,7 +83,9 @@ export const chapter10Data: Record<string, Scene> = {
         ],
         internalMonologue: "ငါသူမကိုဘယ်လောက်ချစ်ခဲ့လဲဆိုတာငါမေ့နေခဲ့တာပဲ။ ပြီးတော့အဲဒါဘယ်လောက်နာကျင်ခဲ့လဲဆိုတာကိုလည်းပဲ။",
         playerChoices: [
-            { text: "\"အရေးမကြီးတော့ပါဘူး။ ငါအဆင်ပြေသွားမှာပါ။\"", nextSceneId: 'scene_ch11_01_apology_tour_choice' }
+            { text: "\"ငါ့ရဲ့အတိတ်ကိုပြန်ရောက်သွားတာ။\"", nextSceneId: 'scene_ch11_01_apology_tour_choice' },
+            { text: "\"အရေးမကြီးတော့ပါဘူး။ ငါအဆင်ပြေသွားမှာပါ။\"", nextSceneId: 'scene_ch11_01_apology_tour_choice' },
+            { text: "သူ့ကိုအမှန်အတိုင်းပြောပြလိုက်သည်။ \"အိအိမိုးအကြောင်း... သူမငါ့ကိုထားသွားခဲ့တုန်းကအကြောင်း။\"", nextSceneId: 'scene_ch11_01_apology_tour_choice', stateUpdates: {relationshipScores: [{character: 'htetNaing', change: 2}], keyEvents: ['confided_in_htetnaing']} }
         ]
     }
 };

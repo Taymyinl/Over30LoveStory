@@ -20,6 +20,8 @@ const App: React.FC = () => {
         linKo: 0,
         htetNaing: 0,
         htooAung: 0,
+        tunMinAung: 0,
+        mayLay: 0,
       },
       keyEvents: [],
     };

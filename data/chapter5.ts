@@ -66,8 +66,50 @@ export const chapter5Data: Record<string, Scene> = {
           {character: "ဝတီ", line: "ရှင့်သူငယ်ချင်းတွေက... တော်တော်လေး... စိတ်ဝင်စားစရာကောင်းတယ်။"}
         ],
         playerChoices: [
-          {text: "\"အဲဒါသူတို့ကိုဖော်ပြဖို့နည်းလမ်းတစ်ခုပဲ။ တောင်းပန်ပါတယ်။\"", nextSceneId: 'scene_ch6_01_hninpwint_call'},
-          {text: "\"သူတို့ကသစ္စာရှိတယ်။ အဲဒါတော့ပြောရမယ်။\"", nextSceneId: 'scene_ch6_01_hninpwint_call', stateUpdates: {relationshipScores: [{character: 'wati', change: 1}]}}
+          {text: "\"အဲဒါသူတို့ကိုဖော်ပြဖို့နည်းလမ်းတစ်ခုပဲ။ တောင်းပန်ပါတယ်။\"", nextSceneId: 'scene_ch5_07_branch_after_wati'},
+          {text: "\"သူတို့ကသစ္စာရှိတယ်။ အဲဒါတော့ပြောရမယ်။\"", nextSceneId: 'scene_ch5_07_branch_after_wati', stateUpdates: {relationshipScores: [{character: 'wati', change: 1}]}}
+        ]
+      },
+      'scene_ch5_07_branch_after_wati': {
+        sceneId: 'scene_ch5_07_branch_after_wati',
+        narratorText: ["ဝတီနဲ့ဒိတ်ပြီးသွားတော့ သင်နည်းနည်းစဉ်းစားချိန်လိုလာတယ်။ ဒီ 'ကောင်စီ' ရဲ့စီစဉ်မှုတွေကတစ်မျိုးပဲ။ သင်တကယ်ဘာလိုချင်လဲဆိုတာကိုပြန်သုံးသပ်ဖို့လိုလာပြီ။"],
+        playerChoices: [
+          {text: "ဇာတ်လမ်းအတိုင်းဆက်သွားရန်... (နှင်းပွင့်ကိုဆက်သွယ်ရန်)", nextSceneId: 'scene_ch6_01_hninpwint_call'},
+          {text: "ငါတကယ်အရက်သောက်ဖို့လိုနေပြီ။ သူငယ်ချင်းဟောင်းထွန်းမင်းအောင်ကိုဖုန်းဆက်ကြည့်မယ်။", nextSceneId: 'scene_ch5_08_tunminaung_intro'}
+        ]
+      },
+      'scene_ch5_08_tunminaung_intro': {
+        sceneId: 'scene_ch5_08_tunminaung_intro',
+        narratorText: ["သင်ထွန်းမင်းအောင်ကိုဖုန်းဆက်လိုက်သည်။ သူက မြို့ထဲကလူသိပ်မသိတဲ့ ဘားအ陈旧တစ်ခုမှာရှိနေသည်။ 'မင်းအတွက်ငါ့မှာအချိန်အမြဲရှိတယ်ကွာ' ဟုသူပြောသည်။", "သင်ရောက်သွားတော့ သူကထောင့်โต๊ะတစ်လုံးမှာထိုင်နေပြီး ဂီတာအဟောင်းတစ်လုံးကိုတီးခတ်နေသည်။ သူကသင့်ကိုတွေ့တော့ပြုံးလိုက်သည်။ သူ့အပြုံးကပင်ပန်းနေပေမယ့်နွေးထွေးမှုရှိသည်။"],
+        dialogue: [
+            {character: "ထွန်းမင်းအောင်", line: "ငါ့ကောင်ကြီး! မင်းမျက်နှာကကမ္ဘာကြီးပြိုလဲတော့မယ့်အတိုင်းပဲ။ မိန်းကလေးကိစ္စပဲမဟုတ်လား?"}
+        ],
+        playerChoices: [
+          {text: "\"အဲဒီလောက်တောင်သိသာနေလား?\"", nextSceneId: 'scene_ch5_09_tunminaung_talk', stateUpdates: {relationshipScores: [{character: 'tunMinAung', change: 1}]}},
+          {text: "\"မဟုတ်ပါဘူး။ ငါဒီတိုင်း... ဘီယာသောက်ချင်လို့။\"", nextSceneId: 'scene_ch5_09_tunminaung_talk'}
+        ]
+      },
+      'scene_ch5_09_tunminaung_talk': {
+        sceneId: 'scene_ch5_09_tunminaung_talk',
+        narratorText: ["သင်သူ့ကိုဖြစ်ပျက်ခဲ့တာတွေအားလုံးပြောပြလိုက်တယ်- 'ကောင်စီ'၊ ဒိတ်သုံးလေးခု၊ ပြီးတော့သင်ဘယ်လောက်တောင်စိတ်ရှုပ်နေလဲဆိုတာကိုပေါ့။ သူကတိတ်တဆိတ်နားထောင်နေပြီး ဘီယာတစ်ငုံသောက်လိုက်တယ်။"],
+        dialogue: [
+            {character: "ထွန်းမင်းအောင်", line: "အောင်ရဲမာန်တို့ကတော့ကလေးတွေပဲ။ သူတို့ကအချစ်ဆိုတာကို formula တစ်ခုလိုထင်နေကြတယ်။ x+y=z ပေါ့။ ဒါပေမဲ့အချစ်ကအဲလိုမဟုတ်ဘူး။ အချစ်ဆိုတာကမင်းရဲ့သီချင်းတစ်ပုဒ်ကိုဖျက်ဆီးလိုက်တဲ့ feedback loop တစ်ခုလိုပဲ။ ရှုပ်ထွေးတယ်၊ ဆူညံတယ်၊ ပြီးတော့တစ်ခါတလေကျရင်မင်းရဲ့နားစည်ကိုကွဲထွက်သွားစေတယ်။"},
+            {character: "ထွန်းမင်းအောင်", line: "မင်းလုပ်ရမှာကမင်းရဲ့ amplifier ကိုရှာဖို့ပဲ။ မင်းရဲ့အသံကိုပိုကျယ်စေမယ့်သူ၊ မင်းရဲ့အမှားအယွင်းတွေကိုတောင်ဂီတတစ်ခုလိုဖြစ်သွားစေမယ့်သူပေါ့။"}
+        ],
+        internalMonologue: "ဒါက... ငါကြားဖူးသမျှထဲမှာအနက်နဲဆုံးအကြံဉာဏ်ပဲ။",
+        playerChoices: [
+          {text: "\"ငါ့ amplifier ကိုငါဘယ်လိုရှာရမှာလဲ?\"", nextSceneId: 'scene_ch5_10_tunminaung_end'},
+          {text: "\"ဒါကတော့... အရမ်းကဗျာဆန်တာပဲ။\"", nextSceneId: 'scene_ch5_10_tunminaung_end'}
+        ]
+      },
+      'scene_ch5_10_tunminaung_end': {
+        sceneId: 'scene_ch5_10_tunminaung_end',
+        dialogue: [
+            {character: "ထွန်းမင်းအောင်", line: "အဲဒါကိုတော့မင်းကိုယ်တိုင်ရှာရမှာပေါ့ကွာ။ ဒါပေမဲ့အကြံပေးရရင်တော့... သူများတွေရဲ့သီချင်းတွေကိုလိုက်မဆိုနဲ့တော့။ မင်းရဲ့ကိုယ်ပိုင်သီချင်းကိုစရေးလိုက်တော့။"}
+        ],
+        narratorText: ["သင်တို့နှစ်ယောက်စကားမပြောဘဲထိုင်နေကြသည်။ သူ့စကားတွေကသင့်စိတ်ထဲမှာစွဲကျန်နေခဲ့သည်။"],
+        playerChoices: [
+          {text: "သူ့အကြံဉာဏ်အတွက်ကျေးဇူးတင်ပြီးဇာတ်လမ်းကိုဆက်ရန်...", nextSceneId: 'scene_ch6_01_hninpwint_call', stateUpdates: {relationshipScores: [{character: 'tunMinAung', change: 2}]}}
         ]
       }
 };

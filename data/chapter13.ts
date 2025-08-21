@@ -163,5 +163,38 @@ export const chapter13Data: Record<string, Scene> = {
         playerChoices: [
             { text: "ဇာတ်လမ်း၏နောက်ဆုံးအပိုင်းသို့ ဆက်ရန်...", nextSceneId: 'scene_ch14_01_friends_final', stateUpdates: {keyEvents: ['platonic_path_friends']} }
         ]
+    },
+
+    // CHAPTER 13, PATH 6: HTET NAING PATH
+    'scene_ch13_01_htetnaing_path_intro': {
+        sceneId: 'scene_ch13_01_htetnaing_path_intro',
+        narratorText: ["သင်ထက်နိုင်ကိုဖုန်းဆက်လိုက်သည်။ 'ဘာမှမလုပ်ဘူး။ မင်းဘားမှာလား? ငါလာခဲ့မယ်။' ဟုသူပြောသည်။", "ဘားပိတ်ပြီးနောက် သင်တို့နှစ်ယောက်တည်းကျန်ခဲ့သည်။ အပြင်ဘက်ကမြို့ရဲ့အသံတွေကတိုးညှင်းနေသည်။"],
+        dialogue: [
+            { character: "ထက်နိုင်", line: "မင်းဒီနေ့ဒိတ်ရှိတယ်လို့ငါထင်တာ။" }
+        ],
+        playerChoices: [
+            { text: "\"ငါမသွားချင်တော့ဘူး။ ငါဒီအေးဆေးတိတ်ဆိတ်မှုကိုပဲလိုချင်တယ်။\"", nextSceneId: 'scene_ch13_02_htetnaing_path_talk', stateUpdates: {relationshipScores: [{character: 'htetNaing', change: 1}]} },
+            { text: "\"ငါ့သူငယ်ချင်းတွေကလည်းအကူအညီလိုနေတယ်။ ဒါပေမဲ့... ငါဒီမှာပဲရှိချင်တယ်။\"", nextSceneId: 'scene_ch13_02_htetnaing_path_talk', stateUpdates: {relationshipScores: [{character: 'htetNaing', change: 2}]} }
+        ]
+    },
+    'scene_ch13_02_htetnaing_path_talk': {
+        sceneId: 'scene_ch13_02_htetnaing_path_talk',
+        narratorText: ["သင်တို့နှစ်ယောက်စကားပြောကြသည်။ မိန်းကလေးတွေအကြောင်းမဟုတ်ဘူး။ ဘဝအကြောင်း၊ အိပ်မက်တွေအကြောင်း၊ ပြီးတော့အသက် ၃၄ နှစ်မှာလမ်းပျောက်နေတယ်လို့ခံစားရတဲ့အကြောင်း။"],
+        dialogue: [
+            { character: "ထက်နိုင်", line: "ဘယ်သူမှလမ်းမပျောက်ပါဘူး။ ငါတို့အားလုံးကဒီတိုင်းပဲ... ကိုယ့်လမ်းကိုယ်ရှာနေကြတာ။ တချို့ကမြေပုံနဲ့၊ တချို့က... မင်းသူငယ်ချင်းတွေလိုပေါ့၊ GPS ပျက်နေတဲ့သူတွေ။" },
+            { character: "သန့်လင်းစိုး", line: "မင်းကရော? မင်းမှာမြေပုံရှိလား?" },
+            { character: "ထက်နိုင်", line: "ငါ့မှာလား? ငါ့မှာကောင်းတဲ့ခရီးသွားဖော်တစ်ယောက်ရှိရင်တော်ပြီ။" }
+        ],
+        internalMonologue: "သူငါ့ကိုစိုက်ကြည့်နေတယ်။ သူ့အကြည့်က... ကွဲပြားနေတယ်။",
+        playerChoices: [
+            { text: "ဘာမှမပြောဘဲ သူ့ကိုပြန်ကြည့်လိုက်သည်။", nextSceneId: 'scene_ch13_03_htetnaing_path_end' }
+        ]
+    },
+    'scene_ch13_03_htetnaing_path_end': {
+        sceneId: 'scene_ch13_03_htetnaing_path_end',
+        narratorText: ["တိတ်ဆိတ်မှုကသက်သောင့်သက်သာရှိနေသည်။ စကားလုံးတွေမလိုအပ်တော့ဘူး။", "ဒီရှုပ်ထွေးနေတဲ့ကမ္ဘာကြီးထဲမှာ တည်ငြိမ်တဲ့နေရာတစ်ခုရှိနေတယ်ဆိုတာသင်သဘောပေါက်လိုက်တယ်။ အဲဒီနေရာကဒီမှာ၊ ဒီလူနဲ့အတူတူပဲ။"],
+        playerChoices: [
+            { text: "ဆက်ရန်...", nextSceneId: 'scene_ch14_01_htetnaing_final_choice', stateUpdates: {keyEvents: ['romance_path_htetnaing']} }
+        ]
     }
 };
