@@ -5,36 +5,38 @@ export const chapter13Data: Record<string, Scene> = {
     'scene_ch13_01_wati_date_3_intro': {
         sceneId: 'scene_ch13_01_wati_date_3_intro',
         narratorText: [
-            "သင်ဝတီနှင့်တွေ့ရန် သူမရွေးချယ်ထားသောနေရာသို့သွားလိုက်သည်။ ထိုနေရာက စာအုပ်ဆိုင်အသေးလေးတစ်ခုဖြစ်ပြီး ကော်ဖီနံ့သင်းသင်းလေးရနေသည်။ သူမကထောင့်တစ်နေရာက သက်သောင့်သက်သာရှိသောထိုင်ခုံတစ်ခုတွင်ထိုင်နေပြီး စာအုပ်တစ်အုပ်ဖတ်နေသည်။",
-            "သူမကသင့်ကိုတွေ့သောအခါပြုံးလိုက်သည်။ ယခင်ကထက်ပို၍ တည်ငြိမ်ပြီး သက်သောင့်သက်သာရှိနေပုံရသည်။"
+            "သင်ဝတီ၏တောင်းပန်မှုကိုလက်ခံပြီးနောက် သူမကသင့်ကို message ပို့သည်: 'ဒီတစ်ခါတော့ အမှားမဖြစ်အောင် ကျွန်မတို့ သူငယ်ချင်းတွေခေါ်သွားကြရအောင်။ မေလေးနဲ့အောင်ရဲမာန်နဲ့အတူ အနုပညာပြခန်းကိုသွားကြမလား?'",
+            "သင်တို့လေးယောက် ပြခန်းတွင်တွေ့ကြသည်။ အောင်ရဲမာန်က 'ယဉ်ကျေး'ဟန်ဆောင်နေပြီး မေလေးကတော့ သင့်ကို စာနာသောအကြည့်ဖြင့်ကြည့်နေသည်။"
         ],
         dialogue: [
-            { character: "ဝတီ", line: "ရှင့်ကိုဒီနေရာမှာတွေ့ရတာဝမ်းသာပါတယ်။ ဒါကကျွန်မအကြိုက်ဆုံးနေရာတွေထဲကတစ်ခုပဲ။" }
+            { character: "ဝတီ", line: "ဒီတစ်ခါတော့ ထူးအောင်မရှိလောက်ဘူးလို့ မျှော်လင့်ပါတယ်။" },
+            { character: "အောင်ရဲမာန်", line: "စိတ်မပူနဲ့! ငါဒီမှာရှိတယ်။ ငါက မင်းရဲ့ bodyguard ပဲ!" }
         ],
         playerChoices: [
-            { text: "\"ဒါက... အေးချမ်းတယ်။ ညဈေးတန်းနဲ့တော့တော်တော်ကွာတယ်။\"", nextSceneId: 'scene_ch13_02_wati_date_3_talk' },
-            { text: "\"ငါလည်းစာအုပ်တွေကြိုက်ပါတယ်။ ဒါပေမဲ့များသောအားဖြင့်တော့ချက်ပြုတ်နည်းစာအုပ်တွေပေါ့။\"", nextSceneId: 'scene_ch13_02_wati_date_3_talk', stateUpdates: {relationshipScores: [{character: 'wati', change: 1}]} }
+            { text: "ဒါကတော့ ထူးဆန်းတဲ့အစပဲ။", nextSceneId: 'scene_ch13_02_wati_date_3_talk' }
         ]
     },
     'scene_ch13_02_wati_date_3_talk': {
         sceneId: 'scene_ch13_02_wati_date_3_talk',
-        narratorText: ["သင်တို့နှစ်ယောက်ကော်ဖီသောက်ရင်းစကားပြောကြသည်။ ဒီတစ်ခါတော့ပိုပြီးလွယ်ကူသွားသည်။ အဆင်မပြေတဲ့တိတ်ဆိတ်မှုတွေမရှိတော့ဘူး။"],
+        narratorText: ["နာရီဝက်ခန့်ကြာသော် အောင်ရဲမာန်က ဗိုက်ကိုပွတ်ပြီး မေလေးကိုကြည့်လိုက်သည်။", "'အချစ်လေး၊ ငါတို့ ရုတ်တရက်... အိမ်သာသွားဖို့လိုလာပြီ' ဟု သူပြောပြီး သူမကိုဆွဲခေါ်သွားသည်။ သူတို့က သင့်ကို မျက်စိတစ်ဖက်မှိတ်ပြသွားသည်။"],
+        internalMonologue: "သူတို့ကတော့တကယ်ကိုသိမ်မွေ့တာပဲ။",
         dialogue: [
-            { character: "ဝတီ", line: "ကျွန်မစဉ်းစားနေမိတာက... ရှင့်သူငယ်ချင်းတွေကဘာလို့ရှင့်အတွက်ဒီလောက်တောင်စိုးရိမ်နေကြတာလဲ? ရှင်ကအဆင်ပြေပုံရပါတယ်။" }
+            { character: "ဝတီ", line: "သူတို့က ကျွန်မတို့ကို တစ်ယောက်တည်း အတူတူရှိစေချင်လို့ ထင်တယ်။" }
         ],
         playerChoices: [
-            { text: "သူမကိုအမှန်အတိုင်းပြောပြလိုက်သည်။ \"ဒါကရှုပ်ထွေးတယ်။ ဆယ်နှစ်လောက်ကြာတဲ့ဆက်ဆံရေးတစ်ခုပြီးကတည်းကငါဘယ်သူနဲ့မှမဒိတ်တော့ဘူး။ သူတို့ကငါ့ကိုကူညီနေတယ်လို့ထင်နေကြတာ။\"", nextSceneId: 'scene_ch13_03_wati_date_3_end', stateUpdates: {relationshipScores: [{character: 'wati', change: 2}]} },
-            { text: "\"သူတို့ကပျင်းနေလို့ပါ။ ငါကသူတို့ရဲ့ကစားစရာပဲ။\"", nextSceneId: 'scene_ch13_03_wati_date_3_end' }
+            { text: "\"ငါလည်းအဲလိုထင်တယ်။ ဒါပေမဲ့ငါစိတ်မဆိုးပါဘူး။\"", nextSceneId: 'scene_ch13_03_wati_date_3_end', stateUpdates: {relationshipScores: [{character: 'wati', change: 1}]} },
+            { text: "\"အောင်ရဲမာန်ကတော့ အောင်ရဲမာန်ပဲ။\"", nextSceneId: 'scene_ch13_03_wati_date_3_end' }
         ]
     },
     'scene_ch13_03_wati_date_3_end': {
         sceneId: 'scene_ch13_03_wati_date_3_end',
-        narratorText: ["သူမကသင့်လက်ကိုဆုပ်ကိုင်လိုက်သည်။ သူမရဲ့ထိတွေ့မှုကနွေးထွေးပြီးနှစ်သိမ့်မှုပေးသည်။"],
+        narratorText: ["သင်တို့နှစ်ယောက်တည်းကျန်ခဲ့သည်။ ဝတီက သင့်ကိုကြည့်နေသည်။ သူမအကြည့်ကပိုပြီးလေးနက်နေသည်။"],
         dialogue: [
-            { character: "ဝတီ", line: "လူတိုင်းမှာအတိတ်ဆိုတာရှိပါတယ်။ အရေးကြီးတာကအဲဒါကရှင့်ကိုဘယ်လိုပုံဖော်သလဲဆိုတာပါပဲ။ ပြီးတော့ရှင့်ကိုကြည့်ရတာ... ရှင်ကလူကောင်းတစ်ယောက်ပါ။" }
+            { character: "ဝတီ", line: "ကျွန်မ... အတည်တကျဆက်ဆံရေးတစ်ခုကိုရှာနေတာကြာပြီ။ ကျွန်မကကစားပွဲတွေမကြိုက်ဘူး။ ကျွန်မကတည်ငြိမ်ပြီးရိုးသားတဲ့လူတစ်ယောက်ကိုလိုချင်တယ်။ ရှင်လိုပေါ့။" }
         ],
+        internalMonologue: "သူမကတော်တော်လေးပွင့်လင်းတာပဲ။",
         playerChoices: [
-            { text: "သူမလက်ကိုပြန်ညှစ်လိုက်သည်။", nextSceneId: 'scene_ch14_01_wati_final_choice', stateUpdates: {keyEvents: ['romance_path_wati']} }
+            { text: "သူမလက်ကိုဆုပ်ကိုင်လိုက်သည်။", nextSceneId: 'scene_ch14_01_final_choice_hub', stateUpdates: {keyEvents: ['romance_path_wati']} }
         ]
     },
 
@@ -42,70 +44,63 @@ export const chapter13Data: Record<string, Scene> = {
     'scene_ch13_01_thuthumay_date_3_intro': {
         sceneId: 'scene_ch13_01_thuthumay_date_3_intro',
         narratorText: [
-            "သုသုမေကသင့်ကို message ပို့သည်: 'ကားအဆင်သင့်ပြင်ထား! ငါတို့ခရီးထွက်ကြမယ်!'",
-            "နောက်တစ်နာရီအကြာတွင် သူမကသင့်ကားထဲတွင်ထိုင်နေပြီး သင်မြို့ပြင်သို့မောင်းထွက်နေသည်။ သူမကတက်ကြွတဲ့ playlist တစ်ခုဖွင့်ထားပြီး ပြတင်းပေါက်အပြင်ဘက်ကိုကြည့်ကာပျော်ရွှင်နေသည်။"
-        ],
-        dialogue: [
-            { character: "သုသုမေ", line: "ဒီလိုမျိုးထွက်ရတာကောင်းတယ်မလား? မြို့ထဲမှာနေရတာပျင်းစရာကြီး!" }
+            "သင်ထွန်းမင်းအောင်နှင့် ဘားတစ်ခုတွင်သောက်နေစဉ် သင့်ဖုန်းမြည်လာသည်။ သုသုမေဖြစ်သည်။",
+            "'ဦးဘယ်မှာလဲ! ကျွန်မသူငယ်ချင်းတွေနဲ့ Night Club မှာ! လာခဲ့ပါ!'",
+            "ထွန်းမင်းအောင်က သင့်ကို မကောင်းဆိုးဝါးအပြုံးဖြင့်ကြည့်သည်။ 'သွားရအောင်ကွာ။ ပျော်စရာကောင်းမှာ။'"
         ],
         playerChoices: [
-            { text: "\"ငါတို့ဘယ်သွားနေလဲဆိုတာတော့သိခွင့်ရှိမယ်ထင်တယ်။\"", nextSceneId: 'scene_ch13_02_thuthumay_date_3_talk' },
-            { text: "\"မင်းဘေးမှာရှိနေရင်တော့ဘယ်နေရာမဆိုကောင်းပါတယ်။\"", nextSceneId: 'scene_ch13_02_thuthumay_date_3_talk', stateUpdates: {relationshipScores: [{character: 'thuThuMay', change: 1}]} }
+            { text: "ဒါကတော့မကောင်းတဲ့အကြံပဲ။ သွားမယ်။", nextSceneId: 'scene_ch13_02_thuthumay_date_3_talk' }
         ]
     },
      'scene_ch13_02_thuthumay_date_3_talk': {
         sceneId: 'scene_ch13_02_thuthumay_date_3_talk',
-        narratorText: ["သင်တို့ကမ်းခြေမြို့ငယ်လေးတစ်ခုသို့ရောက်လာသည်။ သင်တို့ကမ်းခြေမှာလမ်းလျှောက်ကြပြီး ရေခဲမုန့်စားကြသည်။ အသက်ကွာခြားမှုကအရေးမကြီးတော့သလိုပဲ။"],
+        narratorText: ["ကလပ်ကဆူညံပြီးလူတွေပြည့်ကျပ်နေသည်။ သုသုမေကသင့်ကိုတွေ့တော့ပြေးဖက်ပြီး သင့်ကို tequila တစ်ခွက်ကမ်းပေးသည်။", "ညကတော့ဝေဝါးသွားသည်။ ကခုန်ခြင်း၊ သောက်ခြင်း၊ ရယ်မောခြင်းတွေနဲ့။ ညနက်လာတော့ သုသုမေကတော်တော်လေးမူးနေပြီ။"],
         dialogue: [
-            { character: "သုသုမေ", line: "ဦးသိလား၊ ကျွန်မသူငယ်ချင်းတွေကဦးကိုသဘောကျကြတယ်။ သူတို့ကဦးက 'တည်ငြိမ်ပြီးရင့်ကျက်တယ်' လို့ပြောတယ်။" }
+            { character: "သုသုမေ", line: "ဦး... ကျွန်မဦးကိုတကယ်သဘောကျတယ်။ ဦးကတခြားလူတွေနဲ့မတူဘူး။ ကျွန်မနဲ့ဒီညအတူတူရှိပေးပါလား?" }
         ],
+        internalMonologue: "သူမကမူးနေတယ်။ သူမဘာပြောနေလဲသူမကိုယ်တိုင်သိမှာမဟုတ်ဘူး။ ငါအခွင့်အရေးမယူသင့်ဘူး။",
         playerChoices: [
-            { text: "\"အဲဒါက 'အဘိုးကြီး' လို့ပြောတာပဲ။\"", nextSceneId: 'scene_ch13_03_thuthumay_date_3_end' },
-            { text: "\"သူတို့ကငါ့ကိုသဘောကျတာဝမ်းသာပါတယ်။ ငါလည်းသူတို့ကိုသဘောကျပါတယ်။\"", nextSceneId: 'scene_ch13_03_thuthumay_date_3_end', stateUpdates: {relationshipScores: [{character: 'thuThuMay', change: 1}]} }
+            { text: "\"လာ၊ ငါမင်းကိုအိမ်ပြန်ပို့ပေးမယ်။\"", nextSceneId: 'scene_ch13_03_thuthumay_date_3_end', stateUpdates: {relationshipScores: [{character: 'thuThuMay', change: 3}]} },
+            { text: "\"မင်းအရမ်းမူးနေပြီ။\"", nextSceneId: 'scene_ch13_03_thuthumay_date_3_end' }
         ]
     },
     'scene_ch13_03_thuthumay_date_3_end': {
         sceneId: 'scene_ch13_03_thuthumay_date_3_end',
-        narratorText: ["နေဝင်သွားတော့ သူမကသင့်ပခုံးပေါ်ခေါင်းမှီလိုက်သည်။"],
+        narratorText: ["သင်သူမကို taxi ငှားပြီးသူမအိမ်ကိုလိုက်ပို့ပေးသည်။ သူမကသင့်ပခုံးပေါ်မှာအိပ်ပျော်နေသည်။", "သင်သူမကိုသူမတိုက်ခန်းရှေ့မှာချပေးလိုက်သည်။ သူမကသင့်ကိုမော့ကြည့်သည်။", "သူမကသင့်ပါးကိုနမ်းပြီး သင့်နားထဲမှာတိုးတိုးလေးပြောလိုက်သည်။"],
         dialogue: [
-            { character: "သုသုမေ", line: "ကျွန်မတို့ကြားကအသက်ကွာခြားမှုကတခါတလေကျွန်မကိုစိုးရိမ်စေတယ်။ ဒါပေမဲ့... ဦးနဲ့အတူရှိနေရင်တော့ပျော်တယ်။" }
+            { character: "သုသုမေ", line: "ကျေးဇူးတင်ပါတယ်။ ဦးကလူကောင်းတစ်ယောက်ပဲ။" }
         ],
         playerChoices: [
-            { text: "သူမကိုဖက်ထားလိုက်သည်။", nextSceneId: 'scene_ch14_01_thuthumay_final_choice', stateUpdates: {keyEvents: ['romance_path_thuthumay']} }
+            { text: "သူမကိုပြုံးပြပြီးထွက်လာခဲ့သည်။", nextSceneId: 'scene_ch14_01_final_choice_hub', stateUpdates: {keyEvents: ['romance_path_thuthumay']} }
         ]
     },
 
     // CHAPTER 13, PATH 3: HNIN PWINT'S THIRD DATE
     'scene_ch13_01_hninpwint_date_3_intro': {
         sceneId: 'scene_ch13_01_hninpwint_date_3_intro',
-        narratorText: ["နှင်းပွင့်ကသင့်ကို message ပို့သည်: 'ငါ့ code အလုပ်လုပ်သွားပြီ။ မင်းကိုဘီယာတစ်ခွက်ဝယ်တိုက်ချင်တယ်။ ကျေးဇူးတင်တဲ့အနေနဲ့။'", "သင်ဘားမှာတွေ့ကြသည်။ သူမကပုံမှန်ထက်ပိုပြီးပေါ့ပေါ့ပါးပါးဖြစ်နေသည်။"],
+        narratorText: ["နှင်းပွင့်ကသင့်ကို message ပို့သည်: 'ငါ Excel spreadsheet အသစ်တစ်ခုလုပ်နေတယ်။ မင်းရဲ့ဘား inventory အတွက်။ ငါမင်းကိုဘယ်လိုသုံးရမလဲဆိုတာသင်ပေးချင်တယ်။'", "သူမသင့်ဘားကိုရောက်လာသည်။ ထွန်းကိုကိုလည်းရှိနေသည်။"],
         dialogue: [
-            { character: "နှင်းပွင့်", line: "မင်းရဲ့ 'ပြဿနာကိုရှင်းပြခြင်း' နည်းလမ်းကတကယ်အလုပ်ဖြစ်ခဲ့တယ်။ ငါကပြဿနာကိုအရမ်းနီးကပ်လွန်းနေခဲ့တာ။" }
+            { character: "ထွန်းကိုကို", line: "ဝိုး! အချစ်ငှက်နှစ်ကောင်အတူတူအလုပ်လုပ်နေကြတာပဲ! ငါမနှောင့်ယှက်တော့ဘူး!" },
         ],
+        internalMonologue: "သူကမျက်စိမှိတ်ပြပြီး 'မင်းအတွက်ဒါကိုငါလုပ်ပေးတာ' ဆိုတဲ့အမူအရာနဲ့ထွက်သွားတယ်။",
         playerChoices: [
-            { text: "\"တွေ့လား? ငါကကုထုံးဆရာတစ်ယောက်ဖြစ်သင့်တာ။\"", nextSceneId: 'scene_ch13_02_hninpwint_date_3_talk' },
-            { text: "\"ဝမ်းသာပါတယ်။ မင်းအနားယူနိုင်ပြီဆိုတော့။\"", nextSceneId: 'scene_ch13_02_hninpwint_date_3_talk', stateUpdates: {relationshipScores: [{character: 'hninPwint', change: 1}]} }
+            { text: "သူကတော့တကယ်ကိုသိမ်မွေ့တာပဲ။", nextSceneId: 'scene_ch13_02_hninpwint_date_3_talk' }
         ]
     },
     'scene_ch13_02_hninpwint_date_3_talk': {
         sceneId: 'scene_ch13_02_hninpwint_date_3_talk',
-        narratorText: ["စကားဝိုင်းကအလုပ်အကြောင်းကနေဘဝအကြောင်းကိုရောက်သွားသည်။ သူမရဲ့ရည်မှန်းချက်တွေ၊ ကြောက်ရွံ့မှုတွေအကြောင်းပြောပြသည်။"],
-        dialogue: [
-            { character: "နှင်းပွင့်", line: "ငါ့ကိုလူတွေကစက်ရုပ်တစ်ကောင်လိုထင်ကြတယ်။ ငါကခံစားချက်မရှိဘူး၊ ယုတ္တိပဲရှိတယ်လို့။" }
-        ],
+        narratorText: ["သူမက laptop ကိုဖွင့်ပြီး သင့်ကို pivot tables တွေ၊ VLOOKUP တွေအကြောင်းရှင်းပြသည်။ သင်ကနားမလည်သလိုဟန်ဆောင်နေပေမယ့် သူမရဲ့စိတ်အားထက်သန်မှုကိုကြည့်ရတာကိုသင်သဘောကျနေသည်။", "သူမက formula တစ်ခုကိုရှင်းပြဖို့ သင့်ဘက်ကိုလှည့်လိုက်သည်။ သင်တို့မျက်နှာတွေကလက်မအနည်းငယ်ပဲကွာတော့သည်။"],
+        internalMonologue: "အိုး။ ငါတို့တော်တော်နီးကပ်နေတာပဲ။",
         playerChoices: [
-            { text: "\"မင်းကစက်ရုပ်မဟုတ်ပါဘူး။ မင်းကစိတ်အားထက်သန်တဲ့သူတစ်ယောက်ပဲ။ အဲဒါကမတူဘူး။\"", nextSceneId: 'scene_ch13_03_hninpwint_date_3_end', stateUpdates: {relationshipScores: [{character: 'hninPwint', change: 2}]} },
-            { text: "\"နည်းနည်းတော့ဟုတ်တယ်။ ဒါပေမဲ့ငါကြိုက်တဲ့စက်ရုပ်အမျိုးအစားပေါ့။\"", nextSceneId: 'scene_ch13_03_hninpwint_date_3_end', stateUpdates: {relationshipScores: [{character: 'hninPwint', change: -1}]} }
+            { text: "သူမကိုစိုက်ကြည့်နေလိုက်သည်။", nextSceneId: 'scene_ch13_03_hninpwint_date_3_end' },
+            { text: "ချောင်းဟန့်ပြီး နောက်ဆုတ်လိုက်သည်။", nextSceneId: 'scene_ch13_03_hninpwint_date_3_end', stateUpdates: {relationshipScores: [{character: 'hninPwint', change: -1}]} }
         ]
     },
     'scene_ch13_03_hninpwint_date_3_end': {
         sceneId: 'scene_ch13_03_hninpwint_date_3_end',
-        narratorText: ["သူမကသင့်ကိုစိုက်ကြည့်နေသည်။ သူမမျက်လုံးထဲမှာသင်အရင်ကမမြင်ဖူးတဲ့အားနည်းမှုတစ်ခုရှိနေသည်။"],
-        dialogue: [
-            { character: "နှင်းပွင့်", line: "မင်း... ငါ့ကိုနားလည်ပေးတယ်။ လူအများစုကအဲလိုမဟုတ်ဘူး။" }
-        ],
+        narratorText: ["လေထုကတင်းမာနေသည်။ သင်တို့နှစ်ယောက်လုံးမလှုပ်မယှက်ရပ်နေကြသည်။ သင်ရှေ့နည်းနည်းတိုးလိုက်သလို သူမလည်းတိုးလာသည်။", "ဒါပေမဲ့နောက်ဆုံးلحظةမှာ သူမကမျက်လုံးပြူးပြီးနောက်ဆုတ်လိုက်သည်။ သူမပါးတွေကပန်းရောင်ဖြစ်နေသည်။", "'ကျွန်မ... ကျွန်မသွားတော့မယ်' ဟုသူမပြောပြီး ပစ္စည်းတွေသိမ်းကာ အမြန်ထွက်သွားသည်။"],
         playerChoices: [
-            { text: "သူမလက်ကိုဆုပ်ကိုင်လိုက်သည်။", nextSceneId: 'scene_ch14_01_hninpwint_final_choice', stateUpdates: {keyEvents: ['romance_path_hninpwint']} }
+            { text: "ဒါကတော့... မမျှော်လင့်ထားဘူး။", nextSceneId: 'scene_ch14_01_final_choice_hub', stateUpdates: {keyEvents: ['romance_path_hninpwint']} }
         ]
     },
 
@@ -127,11 +122,11 @@ export const chapter13Data: Record<string, Scene> = {
         sceneId: 'scene_ch13_02_poelay_date_3_talk',
         narratorText: ["သင်တို့တိတ်ဆိတ်သောစားသောက်ဆိုင်တစ်ခုတွင်ညစာစားကြသည်။ အစပိုင်းတွင်အခြေအနေကအနည်းငယ်အဆင်မပြေဖြစ်နေသည်။"],
         dialogue: [
-            { character: "ပိုးလေး", line: "ကျွန်မတောင်းပန်ပါတယ်။ ကျွန်မ... ဒိတ်လုပ်တာနဲ့အဆက်ပြတ်နေတာကြာပြီ။ အထူးသဖြင့်... အခုကျွန်မဘဝကဒီလိုဖြစ်နေတော့။" }
+            { character: "ပိုးလေး", line: "ဟိုနေ့ကအထင်လွဲမှုအတွက်ကျွန်မတကယ်စိတ်မကောင်းပါဘူး။" }
         ],
         playerChoices: [
             { text: "\"ဘာမှတောင်းပန်စရာမလိုပါဘူး။ ငါတို့ကတစ်ယောက်နဲ့တစ်ယောက်ပြန်ရင်းနှီးနေကြတာပဲ။ အချိန်ယူပါ။\"", nextSceneId: 'scene_ch13_03_poelay_date_3_end', stateUpdates: {relationshipScores: [{character: 'poeLay', change: 1}]} },
-            { text: "\"ငါလည်းအဲလိုပါပဲ။ ငါ့သူငယ်ချင်းတွေသာမရှိရင်ငါအိမ်ထဲကတောင်ထွက်မှာမဟုတ်ဘူး။\"", nextSceneId: 'scene_ch13_03_poelay_date_3_end', stateUpdates: {relationshipScores: [{character: 'poeLay', change: 2}]} }
+            { text: "\"ငါ့ဘက်ကလည်း အဆင်မပြေဖြစ်ခဲ့တာတွေရှိပါတယ်။ ငါ့သူငယ်ချင်းတွေသာမရှိရင်ငါအိမ်ထဲကတောင်ထွက်မှာမဟုတ်ဘူး။\"", nextSceneId: 'scene_ch13_03_poelay_date_3_end', stateUpdates: {relationshipScores: [{character: 'poeLay', change: 2}]} }
         ]
     },
     'scene_ch13_03_poelay_date_3_end': {
@@ -141,60 +136,7 @@ export const chapter13Data: Record<string, Scene> = {
             { character: "ပိုးလေး", line: "ကျွန်မတို့နှစ်ယောက်လုံးကနည်းနည်းတော့ပျက်စီးနေကြတာပဲနော်?" }
         ],
         playerChoices: [
-            { text: "\"အင်း၊ ဒါပေမဲ့အဲဒါကငါတို့ကိုပိုစိတ်ဝင်စားစရာကောင်းစေတာပေါ့။\"", nextSceneId: 'scene_ch14_01_poelay_final_choice', stateUpdates: {keyEvents: ['romance_path_poelay']} }
-        ]
-    },
-
-    // CHAPTER 13, PATH 5: FRIENDS PATH
-    'scene_ch13_01_friends_path_intro': {
-        sceneId: 'scene_ch13_01_friends_path_intro',
-        narratorText: ["သင်သူငယ်ချင်းတွေကိုကူညီပြီးနောက် သူတို့ကသင့်ကိုဘီယာဝယ်တိုက်သည်။ သူတို့မျက်နှာတွေမှာအပြစ်ရှိတဲ့အရိပ်အယောင်တွေနဲ့။"],
-        dialogue: [
-            { character: "အောင်ရဲမာန်", line: "ငါတို့တောင်းပန်ပါတယ်။ ငါတို့က... နည်းနည်းလွန်သွားတယ်။" },
-            { character: "ထွန်းကိုကို", line: "ငါတို့ကမင်းကိုကူညီချင်ရုံပါပဲ။" }
-        ],
-        playerChoices: [
-            { text: "\"ငါသိပါတယ်။ ဒါပေမဲ့နောက်တစ်ခါငါ့ကိုအရင်မေးပါ။\"", nextSceneId: 'scene_ch13_02_friends_path_end' }
-        ]
-    },
-    'scene_ch13_02_friends_path_end': {
-        sceneId: 'scene_ch13_02_friends_path_end',
-        narratorText: ["သင်တို့အတူတူထိုင်ပြီးရယ်မောကြသည်။ အချစ်ရေးမပါဝင်ပေမယ့် ဒါကလည်းမှန်ကန်တဲ့ရွေးချယ်မှုတစ်ခုလိုခံစားရသည်။"],
-        playerChoices: [
-            { text: "ဇာတ်လမ်း၏နောက်ဆုံးအပိုင်းသို့ ဆက်ရန်...", nextSceneId: 'scene_ch14_01_friends_final', stateUpdates: {keyEvents: ['platonic_path_friends']} }
-        ]
-    },
-
-    // CHAPTER 13, PATH 6: HTET NAING PATH
-    'scene_ch13_01_htetnaing_path_intro': {
-        sceneId: 'scene_ch13_01_htetnaing_path_intro',
-        narratorText: ["သင်ထက်နိုင်ကိုဖုန်းဆက်လိုက်သည်။ 'ဘာမှမလုပ်ဘူး။ မင်းဘားမှာလား? ငါလာခဲ့မယ်။' ဟုသူပြောသည်။", "ဘားပိတ်ပြီးနောက် သင်တို့နှစ်ယောက်တည်းကျန်ခဲ့သည်။ အပြင်ဘက်ကမြို့ရဲ့အသံတွေကတိုးညှင်းနေသည်။"],
-        dialogue: [
-            { character: "ထက်နိုင်", line: "မင်းဒီနေ့ဒိတ်ရှိတယ်လို့ငါထင်တာ။" }
-        ],
-        playerChoices: [
-            { text: "\"ငါမသွားချင်တော့ဘူး။ ငါဒီအေးဆေးတိတ်ဆိတ်မှုကိုပဲလိုချင်တယ်။\"", nextSceneId: 'scene_ch13_02_htetnaing_path_talk', stateUpdates: {relationshipScores: [{character: 'htetNaing', change: 1}]} },
-            { text: "\"ငါ့သူငယ်ချင်းတွေကလည်းအကူအညီလိုနေတယ်။ ဒါပေမဲ့... ငါဒီမှာပဲရှိချင်တယ်။\"", nextSceneId: 'scene_ch13_02_htetnaing_path_talk', stateUpdates: {relationshipScores: [{character: 'htetNaing', change: 2}]} }
-        ]
-    },
-    'scene_ch13_02_htetnaing_path_talk': {
-        sceneId: 'scene_ch13_02_htetnaing_path_talk',
-        narratorText: ["သင်တို့နှစ်ယောက်စကားပြောကြသည်။ မိန်းကလေးတွေအကြောင်းမဟုတ်ဘူး။ ဘဝအကြောင်း၊ အိပ်မက်တွေအကြောင်း၊ ပြီးတော့အသက် ၃၄ နှစ်မှာလမ်းပျောက်နေတယ်လို့ခံစားရတဲ့အကြောင်း။"],
-        dialogue: [
-            { character: "ထက်နိုင်", line: "ဘယ်သူမှလမ်းမပျောက်ပါဘူး။ ငါတို့အားလုံးကဒီတိုင်းပဲ... ကိုယ့်လမ်းကိုယ်ရှာနေကြတာ။ တချို့ကမြေပုံနဲ့၊ တချို့က... မင်းသူငယ်ချင်းတွေလိုပေါ့၊ GPS ပျက်နေတဲ့သူတွေ။" },
-            { character: "သန့်လင်းစိုး", line: "မင်းကရော? မင်းမှာမြေပုံရှိလား?" },
-            { character: "ထက်နိုင်", line: "ငါ့မှာလား? ငါ့မှာကောင်းတဲ့ခရီးသွားဖော်တစ်ယောက်ရှိရင်တော်ပြီ။" }
-        ],
-        internalMonologue: "သူငါ့ကိုစိုက်ကြည့်နေတယ်။ သူ့အကြည့်က... ကွဲပြားနေတယ်။",
-        playerChoices: [
-            { text: "ဘာမှမပြောဘဲ သူ့ကိုပြန်ကြည့်လိုက်သည်။", nextSceneId: 'scene_ch13_03_htetnaing_path_end' }
-        ]
-    },
-    'scene_ch13_03_htetnaing_path_end': {
-        sceneId: 'scene_ch13_03_htetnaing_path_end',
-        narratorText: ["တိတ်ဆိတ်မှုကသက်သောင့်သက်သာရှိနေသည်။ စကားလုံးတွေမလိုအပ်တော့ဘူး။", "ဒီရှုပ်ထွေးနေတဲ့ကမ္ဘာကြီးထဲမှာ တည်ငြိမ်တဲ့နေရာတစ်ခုရှိနေတယ်ဆိုတာသင်သဘောပေါက်လိုက်တယ်။ အဲဒီနေရာကဒီမှာ၊ ဒီလူနဲ့အတူတူပဲ။"],
-        playerChoices: [
-            { text: "ဆက်ရန်...", nextSceneId: 'scene_ch14_01_htetnaing_final_choice', stateUpdates: {keyEvents: ['romance_path_htetnaing']} }
+            { text: "\"အင်း၊ ဒါပေမဲ့အဲဒါကငါတို့ကိုပိုစိတ်ဝင်စားစရာကောင်းစေတာပေါ့။\"", nextSceneId: 'scene_ch14_01_final_choice_hub', stateUpdates: {keyEvents: ['romance_path_poelay']} }
         ]
     }
 };
